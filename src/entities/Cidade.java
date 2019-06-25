@@ -1,17 +1,28 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class Cidades {
+public class Cidade {
     private String name;
     private String estado;
-    private Ordem ordem;
+    private String ordem;
 
-    public Cidades(String name, String estado, Ordem ordem) {
+    public Cidade(String name, String estado, String ordem) {
         this.name = name;
         this.estado = estado;
         this.ordem = ordem;
     }
 
-    List<Cidades>cidades
+    public String getName() {
+        return name;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public String getOrdem() {
+        return ordem;
+    }
 }
